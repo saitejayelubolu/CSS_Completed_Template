@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Borders</title>
+    <style>
+        div{
+            width: 500px;
+            background-color: lightgreen;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        #border-top{
+            border-top: 5px solid green;
+        }
+        #border-right{
+            border-right: 5px solid green;
+        }
+        #border-bottom{
+            border-bottom: 5px solid green;
+        }
+        #border-left{
+            border-left: 5px solid green;
+        }
+        #border-all{
+            border: 5px solid green;
+        }
+        #rounded-all{
+            border: 5px solid green;
+            border-radius: 20px;
+        }
+
+        #rounded-two{
+            border: 5px double green;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        #movie{
+            border-top: 60px solid red;
+            border-right: 80px solid black;
+            border-bottom: 60px solid yellow;
+            border-left: 80px solid black;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- BORDER TOP -->
+<div id="border-top">
+    <h2>BORDER TOP</h2>
+</div>
+
+<!-- BORDER RIGHT -->
+<div id="border-right">
+    <h2>BORDER RIGHT</h2>
+</div>
+
+<!-- BORDER BOTTOM -->
+<div id="border-bottom">
+    <h2>BORDER BOTTOM</h2>
+</div>
+
+<!-- BORDER LEFT -->
+<div id="border-left">
+    <h2>BORDER LEFT</h2>
+</div>
+
+<!-- BORDER ALL SIDES -->
+<div id="border-all">
+    <h2>BORDER ALL</h2>
+</div>
+
+<!-- ROUNDER BORDER ALL SIDES -->
+<div id="rounded-all">
+    <h2>ROUNDED ALL</h2>
+</div>
+
+<!-- Rounded Two Sides -->
+<div id="rounded-two">
+    <h2>ROUNDED TWO</h2>
+</div>
+
+<!-- CUSTOM BORDER -->
+<div id="movie">
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/hSZs53Ncv38?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<br><br>
+</body>
+</html>

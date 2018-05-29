@@ -1,0 +1,279 @@
+/* ------- Main Header ------- */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.main-header{
+    background-image: url("images/technology.JPG");
+    background-size: cover;
+    padding: 15px;
+    color: white;
+    text-align: right;
+}
+
+/* ------ Main Navigation ------- */
+.main-nav{
+    background-color: #23251B;
+    overflow: hidden;
+}
+.main-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav ul li{
+    float: left;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    display: inline-block;
+}
+.main-nav ul li a:hover{
+    background-color: #7D8A70;
+}
+
+.main-nav ul li a.active{
+    background-color: #6CC95E;
+}
+
+.fa{
+    color: lightgray;
+}
+
+/* ----- Flash News ----- */
+.flash-news{
+    background-color: #23251B;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+    margin-top: 5px;
+    animation-name: flash-news;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes flash-news {
+    0% , 50% , 100%{
+        background-color: #7D8A70;
+    }
+    25% , 75%{
+        background-color: #23251B;
+    }
+}
+.flash-news p{
+    margin: 0;
+    animation-name: paragraph;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes paragraph {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+/* ------- Home News Section ------ */
+.home-news-section{
+    width: 1100px;
+    height: auto;
+    margin-left: 150px;
+}
+
+.home-news-article{
+    border: 2px solid gray;
+    width: 330px;
+    height: 550px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 1s;
+}
+.home-news-article:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #23251B;
+    width: 350px;
+}
+.home-news-article img{
+    width: 100%;
+}
+
+.home-news-text{
+    padding: 10px;
+}
+
+/* ---------- Break ----------- */
+.break{
+    clear: both;
+}
+
+/* -------- Main Footer --------- */
+.main-footer{
+    background-color: #23251B;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-footer small , .main-footer a , .fa-user-circle-o{
+    color: orange;
+}
+
+/* ------- News Section ------ */
+.news-section{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+}
+
+.news-article{
+
+}
+
+.news-article h2{
+    background-color: #23251B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.zoom{
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.zoom img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 1s;
+    opacity: 0.8; /* for dark shade */
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+    opacity: 1.0; /* for clear Image */
+    cursor: pointer;
+}
+.news-article p{
+    font-size: 18px;
+}
+
+/* ------- Gallery Section ------- */
+.gallery-section{
+    margin-left: 25px;
+}
+.gallery-section article{
+    border: 2px solid #23251B;
+    width: 300px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.gallery-section article:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #23251B;
+}
+.gallery-section article img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* ------- About Section ------ */
+.about-section{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+}
+.about-article h2{
+    color: #23251B;
+}
+.about-article p{
+    font-size: 18px;
+}
+.client-images img{
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* ------------ Contact Section ------------- */
+.contact-section{
+    width: 1100px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+.contact-section h1{
+    font-size: 30px;
+    color: #23251B;
+    margin-bottom: 5px;
+}
+.contact-section p{
+    margin-top: 0;
+    font-size: 18px;
+}
+input[type='text'],input[type='email']{
+    height: 30px;
+    width: 400px;
+    margin: 5px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 2px solid #23251B;
+}
+
+input[type='text']:focus,input[type='email']:focus,textarea:focus{
+    outline: none;
+    background-color: lightgray;
+}
+
+textarea{
+    width: 390px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #23251B;
+    font-size: 18px;
+}
+
+input[type='submit']{
+    background-color: #23251B;
+    color: white;
+    border: none;
+    margin: 5px;
+    font-size: 18px;
+    padding: 10px 125px;
+    border-radius: 50px;
+}
+
+input[type='submit']:hover{
+    background-color: #7D8A70;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px  #23251B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
